@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake - Nokia Classic</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="phone">
+    <div class="brand">NOKIA</div>
+
+    <div class="screen-frame">
+      <div class="screen-wrap">
+        <canvas id="game" width="252" height="252"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="overlay-text" id="overlayText">
+            <h2>SNAKE</h2>
+            Pressione <strong>ENTER</strong> ou <strong>OK</strong><br>
+            para iniciar
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="score-row info">
+      <span>PONTOS: <span id="score">0</span></span>
+      <span>RECORDE: <span id="best">0</span></span>
+    </div>
+
+    <div class="dpad">
+      <div class="btn empty"></div>
+      <button class="btn" id="btnUp">▲</button>
+      <div class="btn empty"></div>
+      <button class="btn" id="btnLeft">◄</button>
+      <button class="btn btn-center" id="btnCenter">OK</button>
+      <button class="btn" id="btnRight">►</button>
+      <div class="btn empty"></div>
+      <button class="btn" id="btnDown">▼</button>
+      <div class="btn empty"></div>
+    </div>
+
+    <div class="nokia-label">3310</div>
+  </div>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
